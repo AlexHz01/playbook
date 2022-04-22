@@ -1,5 +1,5 @@
-
- const repo = {
+//primier ejemplo para modelar 
+const repo = {
      name : "Launch X",
      author : "Alejandro",
      language : "Java Script",
@@ -22,3 +22,39 @@
      console.log(repo.getGeneralInfo())
 
  
+// Modelando diagramas en objetos de JS
+
+  const issue = {
+      title : "Empezando a modelar graficas",
+      repositoryNameAssociated : "Launch X",
+      status : "Active",
+      numberOfComments : 10,
+      labels : 5,
+      author : "kike",
+      datecreated : "21/04/22",
+      lastUpdated : "22/04/22",
+      getTitleAndAuthor : function () {
+       return ` Tilte :  ${this.title} was created by ${this.author}`
+      }
+    } 
+    console.log(issue.getTitleAndAuthor())
+     
+
+    // Segundo Ejemplo 
+
+    const PullRequest = {
+        title : "Pull Request",
+        branchName : "Modificando",
+        dateCreated : "10/05/2022",
+        status : "active",
+        author : "Alex",
+        repositoryNameAssociated : "Launch X",
+        getStatus : function(){
+            return ` Status : ${this.status}`
+        },
+        getTitleAndAuthor : function () {
+            return `Titulo : ${this.title} was created by ${this.author}`
+        }
+    }
+     console.log(PullRequest.getStatus())
+     console.log(PullRequest.getTitleAndAuthor())
