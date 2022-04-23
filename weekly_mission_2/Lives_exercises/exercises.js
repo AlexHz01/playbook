@@ -28,15 +28,6 @@ class Ajolonauta {
     }
 }
 
- class pokemon {
-     constructor(name){
-         this.name = name
-     }
- }
-
- const pikachu = new pokemon("pikachu")
- console.log(pikachu)
-
 const woppa = new Ajolonauta ("woopa", "NodeJS", "24", "pink") // intanciara un objeto
 console.log (woppa)
 console.log(woppa.sayHello())
@@ -44,3 +35,17 @@ console.log(woppa.sayHello())
 const wooper = new Ajolonauta ("Wooper", "Java", "15", "Blue")
 console.log (wooper)
 console.log (wooper.sayHello())
+
+
+ /// ejemplo de calses 
+ class pokemon {
+     constructor(name){
+         this.name = name
+     }
+ }
+
+ const pikachu = new pokemon ("pikachu")
+ console.log(pikachu)
+  // ---------------------------------------------------------------
+
+
