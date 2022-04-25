@@ -58,17 +58,27 @@ frontend: {
       },
       frontend: {
         isFinished: false,
-        exercisesFinished: false
-      }
-    }
-  }
-]
-const stackNew = explorer.map(function (stack) {return stack.stack})
-const stackJS = explorer.filter ((JS) => JS.stack.includes('JS'))
-const Country = explorer.find((smallVille) => smallVille.city === 'CDMX') 
-const all_exercises_completed = explorer.reduce((acc, element) => acc + element.exercises_completed, 0)
-const validated = explorer.some ((Curso) => Curso.onboarding === true)
-const validatedOnboarding = explorer.every((completed) => typeof completed.onboarding === true) // every
+        exercisesFinished: false,
+      },
+    },
+  },
+];
+
+const arrt = [1, 2, 3, 4, 5];
+const stackNew = explorer.map((stack) => {
+  return stack.stack;
+});
+const stackJS = explorer.filter((JS) => JS.stack.includes("JS"));
+const Country = explorer.find((smallVille) => smallVille.city === "CDMX");
+const all_exercises_completed = explorer.reduce(
+  (acc, element) => acc + element.exercises_completed,
+  0
+);
+const validated = explorer.some((Curso) => Curso.onboarding === true);
+
+const isComplete = (completed) => completed === true;
+const isFinisheds = explorer.map((element)=>element.missions.onboarding.isFinished);
+const validatedOnboarding = isFinisheds.every(isComplete);
 
 
 // 1 Imprimir el nombre de (propiedad name) de cada explorer en 
@@ -76,7 +86,7 @@ const validatedOnboarding = explorer.every((completed) => typeof completed.onboa
 explorer.forEach(name => console.log(name.name))
 // 2 imprimir  el stack de cada explrer usando FOR EAChH
 explorer.forEach(stack => console.log(stack.stack))
-// 3 Crea una nueva lista con las listas de stacks de cada explorer, usa MAP  
+// 3 Crea una nueva lista con las listas de stacks de cada explorer, usa MAP
 console.log(stackNew)
 // 4 Obtén la lista de explorers que tengan en su stack "js", usa FILTER
 // (para validar un elemento en un lista se usa el método includes)
