@@ -1,4 +1,4 @@
-//primier ejemplo para modelar 
+//primier ejemplo para modelar
 const repo = {
      name : "Launch X",
      author : "Alejandro",
@@ -11,7 +11,7 @@ const repo = {
      getTotalIssues : function () {
          return this.issues_open + this.issues_close
      },
-    
+
      getGeneralInfo : function () {
          return `This repository ${this.name} was created by ${this.author}`
      }
@@ -21,7 +21,7 @@ const repo = {
      console.log("Issus Totales" + repo.getTotalIssues())
      console.log(repo.getGeneralInfo())
 
- 
+
 // Modelando diagramas en objetos de JS
 
   const issue = {
@@ -36,11 +36,11 @@ const repo = {
       getTitleAndAuthor : function () {
        return ` Tilte :  ${this.title} was created by ${this.author}`
       }
-    } 
+    }
     console.log(issue.getTitleAndAuthor())
-     
 
-    // Segundo Ejemplo 
+
+    // Segundo Ejemplo
 
     const PullRequest = {
         title : "Pull Request",
