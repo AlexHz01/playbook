@@ -1,0 +1,14 @@
+{
+  "name": "weekly_mission_3",
+  "version": "1.0.0",
+  "description": "Lives de la semana 3",
+  "main": "my_first_js_project.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Hz",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.0"
+  }
+}
