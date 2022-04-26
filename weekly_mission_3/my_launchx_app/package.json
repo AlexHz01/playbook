@@ -4,7 +4,8 @@
   "description": "Creando Mi primer proyecto de JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node ./node_modules/.bin/jest"
   },
   "author": "KikeHZ",
   "license": "ISC",
