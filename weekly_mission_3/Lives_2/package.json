@@ -1,0 +1,14 @@
+{
+  "name": "lives_2",
+  "version": "1.0.0",
+  "description": "Segundo archivo de Live semana 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest"
+  },
+  "author": "Kike",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.0"
+  }
+}
