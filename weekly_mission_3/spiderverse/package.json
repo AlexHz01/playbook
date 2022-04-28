@@ -1,0 +1,14 @@
+{
+  "name": "spiderverse",
+  "version": "1.0.0",
+  "description": "\"Creando el spider verse\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "KikeHZ",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.1"
+  }
+}
