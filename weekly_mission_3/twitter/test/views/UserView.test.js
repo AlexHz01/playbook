@@ -1,7 +1,7 @@
 const UserView = require('./../../app/views/UserView')
 
 describe ("1. Test for UserView", () => {
-    test("Return an arrer object when try to create a new user wirh an null payload", () => {
+    test("Return an arryr object when try to create a new user wirh an null payload", () => {
        const payload = null
        const result = UserView.createUser(payload)
       expect(result.error).toMatch(/payload no existe/) 
